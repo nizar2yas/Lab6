@@ -38,3 +38,4 @@ SELECT
   CAST(update_timestamp AS timestamp) AS update_timestamp,
 FROM
   ${ref("users")}
+QUALIFY row_number() over(partition By id)=1
