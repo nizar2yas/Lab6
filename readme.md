@@ -2,14 +2,15 @@
 
 ## Objectif du Lab
 
-Ce lab a pour objectif de créer des KPI sur les tables existantes. Vous allez apprendre à calculer les KPI suivants :
-1. Chiffre d'affaires généré par pays et par année.
-2. Chiffre d'affaires généré par produit par année.
-3. Les produits les plus vendus par ville.
+Ce laboratoire vise à développer des Key Performance Indicators (KPI) basés sur les tables de données existantes. Vous explorerez et apprendrez à calculer les KPI suivants, essentiels pour évaluer la performance commerciale :
 
-## Prérequis
+1. **Chiffre d'affaires généré par pays et par année** : Vous analyserez les ventes agrégées par pays sur une base annuelle, offrant ainsi une vue stratégique de la contribution des différents marchés géographiques à vos revenus globaux.
 
-Avant de commencer ce lab, assurez-vous d'avoir accès à votre projet Dataform avec les tables suivantes déjà existantes :
-- `fct_transactions`
-- `dim_products`
-- `dim_customers`
+2. **Chiffre d'affaires généré par produit par année** : Cette métrique vous permettra de comprendre la performance de chaque produit au fil du temps, identifiant les tendances de vente et les produits contribuant le plus au chiffre d'affaires global.
+
+3. **Les produits les plus vendus par ville** : En analysant les ventes par ville, vous pourrez identifier les produits les plus populaires dans des régions spécifiques, fournissant des insights précieux pour la gestion des stocks et la stratégie de distribution.
+
+## Avant de commencer 
+Avant de démarrer le laboratoire, assurez-vous que les prérequis suivants sont en place pour garantir la disponibilité et la qualité des données :
+
+Tables `dim_products` et `dim_customers` : Ces tables doivent être créées en utilisant les données les plus récentes disponibles dans les tables sources `stg_products` et `stg_customers`. Assurez-vous que les données sont correctement dédupliquées et nettoyées pour refléter l'état actuel et précis des produits et des clients.
