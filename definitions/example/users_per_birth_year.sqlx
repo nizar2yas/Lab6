@@ -1,0 +1,18 @@
+config {
+    type: "view",
+    materialized: true
+}
+
+WITH
+  cte AS (
+  SELECT
+    EXTRACT(YEAR FROM birth_date) AS birth_year,
+  FROM
+    ${ref('stg_users')} )
+SELECT
+  birth_year,
+  COUNT(*) as count
+FROM
+  cte
+GROUP BY
+  birth_year
