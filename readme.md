@@ -13,4 +13,8 @@ Ce laboratoire vise à développer des Key Performance Indicators (KPI) basés s
 ## Avant de commencer 
 Avant de démarrer le laboratoire, assurez-vous que les prérequis suivants sont en place pour garantir la disponibilité et la qualité des données :
 
-Tables `dim_products` et `dim_customers` : Ces tables doivent être créées en utilisant les données les plus récentes disponibles dans les tables sources `stg_products` et `stg_customers`. Assurez-vous que les données sont correctement dédupliquées et nettoyées pour refléter l'état actuel et précis des produits et des clients.
+les tables suivantes déjà existantes :
+- `fct_transactions`
+- `dim_products`
+- `dim_customers`
+- `dim_address`
